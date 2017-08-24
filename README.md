@@ -1,1 +1,0 @@
-# nagasaimanoj.github.io
