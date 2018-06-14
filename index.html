@@ -1,58 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Fireworks</title>
-    <style>
-        body{
-  background:#000;
-  margin:0;
-  width:100%;
-  overflow:hidden;
-}
-    </style>
-        
-</head>
-<body>
-    
-    <canvas></canvas>
+<html>
+<title>CV | Naga Sai Manoj Giddaluru</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif
+    }
+</style>
 
-    <script>
-    
-        var t = 0;
-        var c = document.querySelector("canvas");     
-        var $ = c.getContext('2d');
-        c.width = window.innerWidth;
-        c.height = window.innerHeight;
-        $.fillStyle = 'hsla(0,0%,0%,1)';
-        window.addEventListener('resize', function() {
-          c.width = window.innerWidth;
-          c.height = window.innerHeight;
-        }, false);
-        function draw() {
-          $.globalCompositeOperation = 'source-over';
-          $.fillStyle = 'hsla(0,0%,0%,.1)';
-          $.fillRect(0, 0, c.width, c.height);
-          var foo, i, j, r;
-          foo = Math.sin(t) * 2 * Math.PI;
-          for (i=0; i<400; ++i) {
-            r = 400 * Math.sin(i * foo);
-            $.globalCompositeOperation = '';
-            $.fillStyle = 'hsla(' + i + 12 + ',100%, 60%,1)';
-            $.beginPath();
-            $.arc(Math.sin(i) * r + (c.width / 2), 
-                  Math.cos(i) * r + (c.height / 2), 
-                  1.5, 0, Math.PI * 2);
-            $.fill();
-          }
-          t += 0.000005;
-          return t %= 2 * Math.PI;
-        };
-        function run() {
-          window.requestAnimationFrame(run);
-          draw();
-        }
-        run();
-    </script>
+<body class="w3-light-teal w3-content w3-margin-top w3-row-padding" style="max-width:1400px">
+    <div class="w3-third">
+        <div class="w3-white w3-text-teal w3-card-4">
+            <div class="w3-display-container">
+                <img src="/profile_pic.jpg" style="width:100%" alt="Avatar">
+            </div>
+            <div class="w3-white w3-text-teal">
+                <h2>
+                    <span class="w3-margin-right"></span>Naga Sai Manoj Giddaluru</h2>
+            </div>
+            <div class="w3-container w3-large">
+                <p>
+                    <span class="fa fa-briefcase w3-margin-right"></span>Machine Learning Engineer</p>
+                <p>
+                    <span class="fa fa-home w3-margin-right"></span>Chennai, India</p>
+                <p>
+                    <span class="fa fa-envelope w3-margin-right"></span>nagasai.g9@gmail.com</p>
+                <p>
+                    <span class="fa fa-phone w3-margin-right"></span>+91 - 955 - 329 - 8984</p>
+                <hr>
+
+                <p class="w3-large">
+                    <b>
+                        <span class="fa fa-gears fa-fw w3-margin-right w3-text-teal"></span>Skills</b>
+                </p>
+                <p>Machine Learning</p>
+                <div class="w3-light-teal w3-round-xlarge w3-small">
+                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:20%">20%</div>
+                </div>
+                <p>Python</p>
+                <div class="w3-light-teal w3-round-xlarge w3-small">
+                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+                        <div class="w3-center w3-text-white">80%</div>
+                    </div>
+                </div>
+                <p>Java</p>
+                <div class="w3-light-teal w3-round-xlarge w3-small">
+                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+                </div>
+                <p>IoT</p>
+                <div class="w3-light-teal w3-round-xlarge w3-small">
+                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30%">30%</div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="w3-twothird">
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-teal w3-padding-16">
+                <span class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></span>Work Experience</h2>
+            <div class="w3-container">
+                <h5 class="w3-opacity">
+                    <b>Machine Learning Engineer</b>
+                </h5>
+                <h6 class="w3-text-teal">
+                    <span class="fa fa-calendar fa-fw w3-margin-right"></span>Jan 2018 -
+                    <span class="w3-tag w3-teal w3-round">Current</span>
+                </h6>
+                <p>Research on various ML techniques and implimenting them for real usecase</p>
+                <hr>
+            </div>
+            <div class="w3-container">
+                <h5 class="w3-opacity">
+                    <b>Data Analyst</b>
+                </h5>
+                <h6 class="w3-text-teal">
+                    <span class="fa fa-calendar fa-fw w3-margin-right"></span>Mar 2017 - Dec 2017</h6>
+                <p>Analyzing data to detect patterns and applying relevant ML algorithms and Visualizing data as Interactive
+                    dashboards
+                </p>
+                <hr>
+            </div>
+        </div>
+
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-teal w3-padding-16">
+                <span class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></span>Education</h2>
+            <div class="w3-container">
+                <h5 class="w3-opacity">
+                    <b>JNTU - Anantapur</b>
+                </h5>
+                <h6 class="w3-text-teal">
+                    <span class="fa fa-calendar fa-fw w3-margin-right"></span>2012 - 2016</h6>
+                <p>Graduated on Computer Science and Engineering with 60% score</p>
+                <hr>
+            </div>
+            <div class="w3-container">
+                <h5 class="w3-opacity">
+                    <b>Board of Intermediate Education, AP</b>
+                </h5>
+                <h6 class="w3-text-teal">
+                    <span class="fa fa-calendar fa-fw w3-margin-right"></span>2010 - 2012</h6>
+                <p>Intermediate
+                    <small>(12th)</small> with 60% score</p>
+                <hr>
+            </div>
+            <div class="w3-container">
+                <h5 class="w3-opacity">
+                    <b>Board of Secondary Education, AP</b>
+                </h5>
+                <h6 class="w3-text-teal">
+                    <span class="fa fa-calendar fa-fw w3-margin-right"></span>2010</h6>
+                <p>SSC
+                    <small>(10th)</small> with 70% score</p>
+                <br>
+            </div>
+        </div>
+
+        <div class="w3-container w3-card w3-white w3-text-teal">
+            <div class="w3-container w3-padding-16">
+                <a href="https://github.com/nagasaimanoj" class="w3-button w3-round-xxlarge w3-xlarge fa fa-github-alt">
+                </a>
+                <a href="https://www.facebook.com/nagasai.g9" class="w3-button w3-round-xxlarge w3-xlarge fa fa-facebook-f">
+                </a>
+                <a href="https://twitter.com/nagasai_g9" class="w3-button w3-round-xxlarge w3-xlarge fa fa-twitter">
+                </a>
+                <a href="https://www.linkedin.com/in/gnsmk/" class="w3-button w3-round-xxlarge w3-xlarge fa fa-linkedin">
+                </a>
+                <a href="https://www.quora.com/profile/Naga-Sai-Manoj-Giddaluru" class="w3-button w3-round-xxlarge w3-xlarge fa fa-quora">
+                </a>
+                <a href="https://www.instagram.com/nagasai.g9/" class="w3-button w3-round-xxlarge w3-xlarge fa fa-instagram">
+                </a>
+                <a href="https://www.reddit.com/user/nagasaimanoj" class="w3-button w3-round-xxlarge w3-xlarge fa fa-reddit-alien">
+                </a>
+                <a href="https://www.youtube.com/c/NagaSaiManojGiddaluru" class="w3-button w3-round-xxlarge w3-xlarge fa fa-youtube-play">
+                </a>
+                <a href="https://plus.google.com/+NagaSaiManojGiddaluru" class="w3-button w3-round-xxlarge w3-xlarge fa fa-google-plus">
+                </a>
+                <a href="https://in.pinterest.com/nagasaig9/" class="w3-button w3-round-xxlarge w3-xlarge fa fa-pinterest-p">
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
