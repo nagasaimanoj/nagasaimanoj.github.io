@@ -9,7 +9,6 @@
         Naga Sai Manoj Giddaluru
     </title>
 
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -18,23 +17,23 @@
     <script>
         $(document).ready(function () {
             $("body").addClass("container");
-            $("div").addClass("well");
+            $("div").addClass("well row");
 
-            $("h1").addClass("page-header well");
+            $("h1").addClass("page-header well row");
             $("h4").addClass("text-muted");
             $("small").addClass("text-muted");
 
             $("ul").addClass("list-inline");
             $("li").addClass("list-inline-item");
 
-            $("a").addClass("btn btn-info");
+            $("a").addClass("btn btn-info col");
             $("a").attr("target", "_blank")
             $("a").css("margin", "8px")
             $("a").css("padding", "8px")
 
-            $("h1 a").addClass("pull-right btn-warning");
+            $("h1 a").addClass("pull-right btn-warning col");
             $("#mail_me").removeAttr("target");
-            $("h1 img").addClass("img-rounded");
+            $("h1 img").addClass("img-rounded col");
             $("h1 img").attr("width", "50px");
 
             $("body").show();
