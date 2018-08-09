@@ -7,7 +7,3 @@
 * [My Github Link](https://github.com/nagasaimanoj)
 * [My Curriculum Vitae](https://nagasaimanoj.github.io/curriculum-vitae)
 * [Web Snipets](https://nagasaimanoj.github.io/My-Site)
-
----
-
-contact me @ nagasai.g9@gmail.com
