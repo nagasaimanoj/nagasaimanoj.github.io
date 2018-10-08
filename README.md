@@ -2,7 +2,7 @@
 
 - Projects
   - [Regression Techniques](https://nagasaimanoj.github.io/Regression-Techniques)
-  - [ML Gradient Descent](https://nagasaimanoj.github.io/ML-Gradient-Descent)
+  - [Gradient Descent for Linear Regression](https://github.com/nagasaimanoj/Gradient-Descent-for-Linear-Regression)
 
 - Social Profiles
   - [My Github Link](https://github.com/nagasaimanoj)
