@@ -1,3 +1,3 @@
 # Naga Sai Manoj Giddaluru
 
-[open page](https://nagasaimanoj.github.io/)
+[click here to know more](https://nagasaimanoj.github.io/)
